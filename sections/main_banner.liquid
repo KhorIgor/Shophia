@@ -1,7 +1,7 @@
 {{ 'banner.css' | asset_url | stylesheet_tag }}
 <div class="banner">
     <div class="banner__slider">      
-        {% for slide in section.blocks %}
+        {% for block in section.blocks %}
           <div class="banner__slide">
           {{ block.settings.image | image_url: width: 1500 | image_tag:
               loading: 'lazy',
