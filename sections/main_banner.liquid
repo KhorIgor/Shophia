@@ -1,6 +1,6 @@
 {{ 'banner.css' | asset_url | stylesheet_tag }}
 <div class="banner">
-    <div class="banner__slider">      
+    <div class="banner__slider">
         {% for block in section.blocks %}
           <div class="banner__slide">
           {{ block.settings.image | image_url: width: 1500 | image_tag:
@@ -32,6 +32,17 @@
       {
         "type": "heading",
         "name": "image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "name": "image2",
         "settings": [
           {
             "type": "image_picker",
