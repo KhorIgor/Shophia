@@ -1,0 +1,43 @@
+{{ 'banner.css' | asset_url | stylesheet_tag }}
+<div class="banner">
+    <div class="banner__slider">
+      <div class="banner__slide">
+        {{ section.settings.image | image_url: width: 1500 | image_tag:
+            loading: 'lazy',
+            width: 1500,
+            height: 640,
+            class: 'banner__img',
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.image.alt | escape
+          }}
+        {% comment %} <img class="banner__img" src="img/main_bg-1.jpg" alt="" /> {% endcomment %}
+        <div class="banner__content">
+          <div class="banner__season">mid-season</div>
+          <div class="banner__sale">sale</div>
+          <div class="banner__upto">up to</div>
+          <div class="banner__discount">50 % off</div>
+        </div>
+        <button class="default-btn banner__btn">shop now</button>
+      </div>
+    </div>
+</div>
+{% schema %}
+{
+    "name": "main_banner",
+    "tag": "section",
+    "class": "section banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:sections.image-banner.settings.image.label"
+      }
+    ],
+    "blocks": [
+      
+    ],
+    "presets": [
+      
+    ]
+  }
+{% endschema %}

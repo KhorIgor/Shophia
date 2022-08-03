@@ -1,0 +1,75 @@
+.banner__slider {
+  position: relative;
+  /* min-height: 692px; */
+}
+.banner__slide {
+  padding: 220px 0;
+  /* height: 692px; */
+  /* min-height: 692px; */
+  text-align: center;
+  position: relative;
+}
+.banner__img {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+.banner__content {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-277px / 2), calc(-277px / 2)); */
+  margin: 0 auto 54px;
+  max-width: 277px;
+  width: 100%;
+  min-height: 277px;
+  text-align: center;
+  border: 7px double #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.banner__season {
+  color: #fff;
+  font-size: 19.44px;
+  padding-top: 29px;
+}
+.banner__sale {
+  font-size: 58.81px;
+  padding-top: 36px;
+}
+.banner__upto {
+  color: #fff;
+  font-size: 19.44px;
+  padding-top: 33px;
+}
+.banner__discount {
+  padding-top: 26px;
+  font-size: 31.36px;
+}
+.banner__btn {
+  margin: 0 auto;
+  padding: 18px 26px;
+}
+.banner__dots {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  min-width: 10px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.banner__dots li {
+  height: 14px;
+  width: 14px;
+  background-color: #b2b2b2;
+  transition: background-color 0.5s;
+  transform: rotate(45deg);
+}
+.banner__dots li.slick-active {
+  background-color: #000;
+}
