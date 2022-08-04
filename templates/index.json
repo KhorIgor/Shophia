@@ -4,5 +4,5 @@
       "type": "main_banner"
     }
   },
-  "order": []
+  "order": ["main_banner"]
 }
