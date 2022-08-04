@@ -29,11 +29,18 @@
 
     {% render 'meta-tags' %}
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'jquery.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'index.js' | asset_url }}" defer="defer"></script>
     {{ 'slick.css' | asset_url | stylesheet_tag }}
+    {{ settings.type_header_font | font_url: 'woff' }}
     {{ 'global.css' | asset_url | stylesheet_tag }}
     {{ 'media.css' | asset_url | stylesheet_tag }}
     {{ content_for_header }}
