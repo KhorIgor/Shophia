@@ -1,3 +1,4 @@
+@import "fonts.css";
 :root {
   --accent-color: #feab12;
   --sec-accent-color: #f09d66;
@@ -8,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 ul,
 li {
   margin: 0;
