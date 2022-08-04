@@ -1,0 +1,40 @@
+.testimonials {
+}
+.testimonial__title__wrap {
+  padding: 50px;
+}
+.testimonials__content {
+  background-color: var(--second-color);
+  padding: 50px;
+}
+.testimonials__inner {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.testimonial__box {
+  display: flex;
+  align-items: flex-end;
+}
+.testimonial__text {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+.testimonial__comment {
+  padding-bottom: 50px;
+}
+.testimonial__author {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.testimonial__position {
+  color: #444;
+  font-family: "Lato";
+  font-style: initial;
+  font-size: 0.8rem;
+  font-weight: bold;
+}

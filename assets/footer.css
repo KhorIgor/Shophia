@@ -1,0 +1,103 @@
+.footer {
+  background-color: #141414;
+  padding: 50px 0;
+}
+.footer__top {
+  display: flex;
+}
+.footer__navcol {
+  width: 210px;
+}
+.footer__navbox {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.footer__navbox h4 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer__navbox a {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
+}
+.footer__navbox a:hover {
+  color: #fff;
+}
+.footer__links {
+  padding: 50px 0;
+}
+.footer__subscribe {
+  width: 40%;
+  padding-left: 50px;
+  /* justify-content: center;
+  align-items: center;
+  display: flex; */
+  color: #fff;
+}
+.footer__subscribe h4 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding-bottom: 50px;
+}
+.footer__socials {
+  padding-bottom: 50px;
+  display: flex;
+}
+.footer__socials a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+}
+.footer__socials a + a {
+  margin-left: 25px;
+}
+
+.footer__socials svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-25px / 2), calc(-25px / 2));
+  width: 25px;
+  height: 25px;
+  fill: #141414;
+}
+.footer__subscribe__text {
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+.footer__subscribe__text span {
+  font-family: "Playfair Display";
+  font-style: italic;
+  text-transform: lowercase;
+}
+.footer__email {
+}
+.footer__email input {
+  width: 70%;
+  border: none;
+  padding: 15px 20px;
+  outline: none;
+}
+.footer__email button {
+  width: 29%;
+  padding: 15px 20px;
+}
+.footer__bottom {
+  color: #fff;
+  padding: 25px 0;
+}
+.footer__cards {
+  display: flex;
+  gap: 15px;
+}
+.footer__cards svg {
+  width: 35px;
+  height: 35px;
+  fill: var(--accent-color);
+}

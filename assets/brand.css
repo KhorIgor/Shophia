@@ -1,0 +1,12 @@
+.brand__title__wrap {
+  margin: 130px 0 130px;
+}
+.brand__brands {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 40px 0 130px;
+  text-align: center;
+}
+.brand__brand {
+  padding: 25px 0;
+}
