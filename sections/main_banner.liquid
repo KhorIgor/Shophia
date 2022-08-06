@@ -2,27 +2,26 @@
 <div class="banner">
     <div class="banner__slider">
         {% for block in section.blocks %}
-          <div class="banner__slide">
-            {% if block.settings.image != blank%}
+          {% if block.settings.image != blank%}
+            <div class="banner__slide">
               {{ block.settings.image | image_url: width: 1450 | image_tag:
                 loading: 'lazy',
                 class: 'banner__img',
                 height: nil,
                 alt: block.settings.image.alt | escape
               }}
-            {% endif%}
-          
-            <div class="banner__outercontent">
-              <div class="banner__content">
-                <div class="banner__season">mid-season</div>
-                <div class="banner__sale">sale</div>
-                <div class="banner__upto">up to</div>
-                <div class="banner__discount">50 % off</div>
+              <div class="banner__outercontent">
+                <div class="banner__content">
+                  <div class="banner__season">mid-season</div>
+                  <div class="banner__sale">sale</div>
+                  <div class="banner__upto">up to</div>
+                  <div class="banner__discount">50 % off</div>
+                </div>
+                <button class="default-btn banner__btn">shop now</button>
               </div>
-              <button class="default-btn banner__btn">shop now</button>
             </div>
-          </div>
-        {%endfor%}
+          {% endif %}
+        {% endfor %}
         {% comment %} <img class="banner__img" src="img/main_bg-1.jpg" alt="" /> {% endcomment %}
    </div>
 </div>
