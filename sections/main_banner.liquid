@@ -3,15 +3,15 @@
     <div class="banner__slider">
         {% for block in section.blocks %}
           <div class="banner__slide">
-            {% if block.settings.image == blank%}
-              <div>No Image</div>
+            {% if block.settings.image != blank%}
+              {{ block.settings.image | image_url: width: 1450 | image_tag:
+                loading: 'lazy',
+                class: 'banner__img',
+                height: nil,
+                alt: block.settings.image.alt | escape
+              }}
             {% endif%}
-          {{ block.settings.image | image_url: width: 1450 | image_tag:
-              loading: 'lazy',
-              class: 'banner__img',
-              height: nil,
-              alt: block.settings.image.alt | escape
-          }}
+          
             <div class="banner__outercontent">
               <div class="banner__content">
                 <div class="banner__season">mid-season</div>
