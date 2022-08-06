@@ -2,7 +2,7 @@
 <div class="banner">
     <div class="banner__slider">
         {% for block in section.blocks %}
-          {% if block.settings.image != blank%}
+          {% if block.settings.image != blank %}
             <div class="banner__slide">
               {{ block.settings.image | image_url: width: 1450 | image_tag:
                 loading: 'lazy',
