@@ -12,7 +12,7 @@
               }}
               <div class="banner__outercontent">
                 <div class="banner__content">
-                  <div class="banner__season">mid-season</div>
+                  <div class="banner__season">{{block.settings.main_text}}</div>
                   <div class="banner__sale">sale</div>
                   <div class="banner__upto">up to</div>
                   <div class="banner__discount">50 % off</div>
@@ -42,17 +42,11 @@
             "type": "image_picker",
             "id": "image",
             "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
-          }
-        ]
-      },
-      {
-        "type": "heading2",
-        "name": "image2",
-        "settings": [
+          },
           {
-            "type": "image_picker",
-            "id": "image",
-            "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+            "type": "text",
+            "id": "main_text",
+            "label": "Enter your title of the slide"
           }
         ]
       }
