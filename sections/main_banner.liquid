@@ -12,10 +12,10 @@
               }}
               <div class="banner__outercontent">
                 <div class="banner__content">
-                  <div class="banner__season">mid-season</div>
+                  <div class="banner__season">{{block.settings.season}}mid-season</div>
                   <div class="banner__sale">{{block.settings.main_text}}</div>
-                  <div class="banner__upto">up to</div>
-                  <div class="banner__discount">50 % off</div>
+                  <div class="banner__upto">{{block.settings.subtitle}}up to</div>
+                  <div class="banner__discount">{{block.settings.discount}}50 % off</div>
                 </div>
                 <button class="default-btn banner__btn">shop now</button>
               </div>
@@ -45,8 +45,23 @@
           },
           {
             "type": "text",
+            "id": "season",
+            "label": "Enter your season of the slide"
+          },
+          {
+            "type": "text",
             "id": "main_text",
             "label": "Enter your title of the slide"
+          },
+          {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Enter your subtitle of the slide"
+          },
+          {
+            "type": "text",
+            "id": "discount",
+            "label": "Enter your subtitle of the slide"
           }
         ]
       }
