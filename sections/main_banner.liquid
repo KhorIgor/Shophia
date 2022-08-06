@@ -3,6 +3,9 @@
     <div class="banner__slider">
         {% for block in section.blocks %}
           <div class="banner__slide">
+            {% if block.settings.image == blank%}
+              <div>No Image</div>
+            {% endif%}
           {{ block.settings.image | image_url: width: 1450 | image_tag:
               loading: 'lazy',
               class: 'banner__img',
