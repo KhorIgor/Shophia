@@ -38,3 +38,16 @@
   font-size: 0.8rem;
   font-weight: bold;
 }
+@media screen and (max-width: 1065px) {
+  .testimonials__inner {
+    display: block;
+  }
+  .testimonials__inner > div {
+    padding: 25px 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .testimonials__inner img {
+    display: none;
+  }
+}

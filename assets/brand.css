@@ -10,3 +10,13 @@
 .brand__brand {
   padding: 25px 0;
 }
+@media screen and (max-width: 570px) {
+  .brand__brands {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 350px) {
+  .brand__brands {
+    grid-template-columns: 1fr;
+  }
+}

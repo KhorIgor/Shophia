@@ -2,7 +2,19 @@
   "sections": {
     "main_banner": {
       "type": "main_banner"
+    },
+    "support": {
+      "type": "support"
+    },
+    "featured": {
+      "type": "featured"
+    },
+    "recent": {
+      "type": "recent"
+    },
+    "testimonials": {
+      "type": "testimonials"
     }
   },
-  "order": ["main_banner"]
+  "order": ["main_banner", "support", "featured", "recent", "testimonials"]
 }

@@ -1,0 +1,45 @@
+{{ 'testimonial.css' | asset_url | stylesheet_tag }}
+<section class="testimonials">
+    <div class="container">
+      <div class="title__wrap testimonial__title__wrap">
+        <h3 class="title testimonial__title">customers says</h3>
+      </div>
+    </div>
+    <div class="testimonials__content">
+      <div class="container">
+        <div class="testimonials__inner">
+          <div class="testimonial__box">
+            <img src="img/testimonials-2.png" alt="" />
+            <div class="testimonial__text">
+              <div class="testimonial__comment">
+                Sed ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque
+              </div>
+              <div class="testimonial__author">Sandra Dewi</div>
+              <div class="testimonial__position">FASHION STYLISH</div>
+            </div>
+          </div>
+          <div class="testimonial__box">
+            <div class="testimonial__text align-right">
+              <div class="testimonial__comment">
+                Sed ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque
+              </div>
+              <div class="testimonial__author">Shaheer Sheikh</div>
+              <div class="testimonial__position">DESIGNER</div>
+            </div>
+            <img src="img/testimonials-1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% schema %}
+    {
+        "name": "testimonials",
+        "class": "section testimonials",
+        "tag": "section",
+        "settings": []
+    }
+{% endschema%}

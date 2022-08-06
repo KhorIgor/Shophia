@@ -15,7 +15,35 @@
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
+    {% style%}
+      @font-face {
+  font-family: "Lato";
+  src: {{ 'Lato-Regular.woff2' | asset_url }} format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Lato";
+  src: {{ 'Lato-Italic.woff2' | asset_url }} format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: {{ 'Lato-Bold.woff2' | asset_url }} format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: {{ 'Lato-BoldItalic.woff2' | asset_url }} format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+    {% endstyle%}
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
@@ -35,7 +63,7 @@
     <script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'index.js' | asset_url }}" defer="defer"></script>
     {{ 'slick.css' | asset_url | stylesheet_tag }}
-    {{ settings.type_header_font | font_url: 'woff' }}
+    {% comment %} {{ settings.type_header_font | font_url: 'woff' }} {% endcomment %}
     {{ 'global.css' | asset_url | stylesheet_tag }}
     {{ 'media.css' | asset_url | stylesheet_tag }}
     {{ content_for_header }}

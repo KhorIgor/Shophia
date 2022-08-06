@@ -76,3 +76,15 @@
   font-size: 30px;
   font-weight: bold;
 }
+@media screen and (max-width: 1200px) {
+  .support__inner {
+    display: block;
+    margin: 0 auto;
+  }
+  .support__inner > div {
+    width: 100%;
+  }
+  .support__inner span {
+    display: none;
+  }
+}

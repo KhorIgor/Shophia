@@ -75,3 +75,14 @@
   padding: 16px 14px;
   font-size: 16px;
 }
+@media screen and (max-width: 870px) {
+  .featured__products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 450px) {
+  .featured__products {
+    grid-template-columns: 1fr;
+    padding: 30px 0;
+  }
+}

@@ -101,3 +101,17 @@
   height: 35px;
   fill: var(--accent-color);
 }
+@media screen and (max-width: 1065px) {
+  .footer__top {
+    display: block;
+  }
+  .footer__navbox {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__subscribe {
+    width: 100%;
+    padding: 35px 0;
+  }
+}

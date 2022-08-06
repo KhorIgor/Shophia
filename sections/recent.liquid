@@ -1,0 +1,78 @@
+{{ 'recent.css' | asset_url | stylesheet_tag }}
+<section class="recent">
+    <div class="container">
+      <div class="title__wrap recent__title__wrap">
+        <h3 class="title recent__title">Summer Collection</h3>
+      </div>
+      <div class="recent__products">
+        <div class="recent__product">
+          <div class="recent__product__cover"></div>
+          <div class="recent__product__discount">20%</div>
+          <img src="img/recent_1.jpg" alt="" />
+          <div class="recent__product__btn">
+            <button>+ add to card</button>
+          </div>
+        </div>
+        <div class="recent__product">
+          <div class="recent__product__cover"></div>
+          <img src="img/recent_2.jpg" alt="" />
+          <div class="recent__product__btn">
+            <button>+ add to card</button>
+          </div>
+        </div>
+        <div class="recent__product">
+          <div class="recent__product__cover"></div>
+          <img src="img/recent_3.jpg" alt="" />
+          <div class="recent__product__btn">
+            <button>+ add to card</button>
+          </div>
+        </div>
+        <div class="recent__product">
+          <div class="recent__product__cover"></div>
+          <div class="recent__product__discount">40%</div>
+          <img src="img/recent_4.jpg" alt="" />
+          <div class="recent__product__btn">
+            <button>+ add to card</button>
+          </div>
+        </div>
+        <div class="recent__product">
+          <div class="recent__product__cover"></div>
+          <div class="recent__product__discount">20%</div>
+          <img src="img/recent_5.jpg" alt="" />
+          <div class="recent__product__btn">
+            <button>+ add to card</button>
+          </div>
+        </div>
+        <div class="recent__product">
+          <div class="recent__product__cover"></div>
+          <img src="img/recent_6.jpg" alt="" />
+          <div class="recent__product__btn">
+            <button>+ add to card</button>
+          </div>
+        </div>
+        <div class="recent__product">
+          <div class="recent__product__cover"></div>
+          <img src="img/recent_7.jpg" alt="" />
+          <div class="recent__product__btn">
+            <button>+ add to card</button>
+          </div>
+        </div>
+        <div class="recent__product">
+          <div class="recent__product__cover"></div>
+          <div class="recent__product__discount">40%</div>
+          <img src="img/recent_8.jpg" alt="" />
+          <div class="recent__product__btn">
+            <button>+ add to card</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% schema %}
+    {
+        "name": "recent",
+        "class": "recent",
+        "settings": []
+    }
+{% endschema %}

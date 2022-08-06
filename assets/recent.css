@@ -101,3 +101,26 @@
   border-top: 23px solid transparent;
   border-left: 23px solid #000;
 }
+@media screen and (max-width: 740px) {
+  .recent__products {
+    grid-template-columns: 1fr 1fr;
+  }
+  .recent__product__discount {
+    padding: 14px 10px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .recent__products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .recent__product__btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  .recent__products {
+    grid-template-columns: 1fr;
+  }
+}
