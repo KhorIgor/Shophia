@@ -3,7 +3,7 @@
     <div class="banner__slider">
         {% for block in section.blocks %}
           <div class="banner__slide">
-          {{ block.settings.image | image_url: width: 1450, height: 629 | image_tag:
+          {{ block.settings.image | image_url | image_tag:
               loading: 'lazy',
               class: 'banner__img',
               height: 629,
