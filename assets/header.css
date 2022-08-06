@@ -31,9 +31,7 @@
 .header__account li:last-child {
   padding: 0 0 0 30px;
 }
-.header__logo img {
-  width: 100%;
-}
+
 .header__bottom__inner {
   display: flex;
   justify-content: space-between;

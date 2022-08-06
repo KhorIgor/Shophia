@@ -38,10 +38,8 @@
             </nav>
             <div class="header__logo">
               <a href="#">
-                {{'logo.png' | asset_img_url: width: 288 | image_tag }}
-                <img src="{{ 'logo.png' | asset_img_url: '443x' }}" loading="lazy" width="228">
-                <img src="{{ 'logo.png' | asset_url }}" loading="lazy" width="228">
-                {{ 'logo.png' | asset_url }}
+                <img src="{{ 'logo.png' | asset_img_url: '228x' }}" loading="lazy" width="228" height>
+                <img src="{{ 'logo.png' | asset_url }}" loading="lazy" width="228" height>
                 {% comment %} <img src="{{ 'logo.png' | asset_img_url }}" loading="lazy" width="228" height="73"/> {% endcomment %}
               </a>
             </div>
