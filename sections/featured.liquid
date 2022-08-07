@@ -5,9 +5,10 @@
         <h3 class="title featured__title">HandPicker</h3>
       </div>
       <div class="featured__products">
-        {% for product in collection %}
+        {% for product in collections['Clothes'].protucts %}
+          {{'asd'}}
           <div class="featured__product">
-            {{product.image | image_url | image_tag }}
+            {{ product.image | image_url | image_tag }}
             <div class="featured__innerbox">
               <div class="featured__showbox">
                 <button class="featured__btn default-btn">show now</button>
