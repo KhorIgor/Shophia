@@ -6,12 +6,11 @@
       </div>
       <div class="recent__products">
         {% for product in collections['clothing'].products %}
-          {{
-            product.gift_card
-          }}
           <div class="recent__product">
             <div class="recent__product__cover"></div>
-            <div class="recent__product__discount">20%</div>
+            {% if product.compare_at_price_max > product.price %}
+              <div class="recent__product__discount">{{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}%</div>
+            {% endif %}
             {{ product.featured_image | image_url: width: 155 | image_tag }}
             <div class="recent__product__btn">
               <button>+ add to card</button>
