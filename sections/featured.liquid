@@ -5,6 +5,16 @@
         <h3 class="title featured__title">HandPicker</h3>
       </div>
       <div class="featured__products">
+      {% for block in section.blocks%}
+        <div class="featured__product">
+          {{block.settings.image | asset_img_url | image_tag: width: 255}}
+          <div class="featured__innerbox">
+            <div class="featured__showbox">
+              <button class="featured__btn default-btn">show now</button>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
         <div class="featured__product">
           <img src="img/Rectangle-19-copy.jpg" alt="" />
           <div class="featured__innerbox">
@@ -56,6 +66,30 @@
       "class": "section featured",
       "settings": [
           
+      ],
+      "blocks": [
+        {
+          "type": "image",
+          "name": "image",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image"
+            }
+            {
+              "type": "checkbox",
+              "id": "large_img",
+              "default": false,
+              "options": [
+                {
+                  "value": "large",
+                  "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
+                }
+              ]
+            }
+          ]
+        }
+
       ]
     }
 {% endschema %}
