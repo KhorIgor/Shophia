@@ -5,7 +5,10 @@
         <h3 class="title featured__title">HandPicker</h3>
       </div>
       <div class="featured__products">
-        {% for product in collections['Clothes'].protucts %}
+        {{collections}}
+        {{collections['Clothes']}}
+        {{collections['Clothes'].protucts}}
+        {% for product in collections['Clothes'].protucts %}          
           {{'asd'}}
           <div class="featured__product">
             {{ product.image | image_url | image_tag }}
