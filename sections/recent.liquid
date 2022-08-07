@@ -5,6 +5,16 @@
         <h3 class="title recent__title">Summer Collection</h3>
       </div>
       <div class="recent__products">
+        {% for product in collections['clothing'].products %}
+          <div class="recent__product">
+            <div class="recent__product__cover"></div>
+            <div class="recent__product__discount">20%</div>
+            {{ product.featured_image | image_url: width: 155 | image_tag }}
+            <div class="recent__product__btn">
+              <button>+ add to card</button>
+            </div>
+          </div>
+        {% endfor%}
         <div class="recent__product">
           <div class="recent__product__cover"></div>
           <div class="recent__product__discount">20%</div>

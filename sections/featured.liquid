@@ -5,16 +5,6 @@
         <h3 class="title featured__title">HandPicker</h3>
       </div>
       <div class="featured__products">
-        {% for product in collections['clothing'].products %}
-          <div class="featured__product">
-            {{ product.featured_image | image_url: width: 155 | image_tag }}
-            <div class="featured__innerbox">
-              <div class="featured__showbox">
-                <button class="featured__btn default-btn">show now</button>
-              </div>
-            </div>
-          </div>
-        {% endfor%}
         <div class="featured__product">
           <img src="img/Rectangle-19-copy.jpg" alt="" />
           <div class="featured__innerbox">
