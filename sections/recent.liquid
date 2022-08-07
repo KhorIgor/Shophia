@@ -11,7 +11,7 @@
             {% if product.compare_at_price_max > product.price %}
               <div class="recent__product__discount">{{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}%</div>
             {% endif %}
-            {{ product.featured_image | image_url: width: 155 | image_tag }}
+            {{ product.featured_image | image_url: width: 301 | image_tag }}
             <div class="recent__product__btn">
               <button>+ add to card</button>
             </div>
