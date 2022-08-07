@@ -6,7 +6,7 @@
       </div>
       <div class="recent__products">
         {% for product in collections['clothing'].products %}
-          {% if product.gift_card %} {{'asd'}} {% endif%}
+          {% if product.gift_card == true %} {{'asd'}} {% endif%}
           <div class="recent__product">
             <div class="recent__product__cover"></div>
             <div class="recent__product__discount">20%</div>
