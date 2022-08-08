@@ -67,7 +67,8 @@
   left: 50%;
   bottom: 0px;
   background-color: #000;
-  padding: 8px;
+  font-size: 1.05rem;
+  padding: 12px 8px;
   transition: 0.2s;
   transform: translateX(calc(-137px / 2));
 }
@@ -84,7 +85,7 @@
   position: absolute;
   top: 0;
   transition: border-color 0.2s;
-  left: -45px;
+  left: -44px;
   border-bottom: 23px solid #000;
   border-right: 23px solid #000;
   border-top: 23px solid transparent;
@@ -95,7 +96,7 @@
   position: absolute;
   top: 0;
   transition: border-color 0.2s;
-  right: -45px;
+  right: -44px;
   border-bottom: 23px solid #000;
   border-right: 23px solid transparent;
   border-top: 23px solid transparent;
