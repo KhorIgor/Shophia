@@ -85,22 +85,22 @@
   position: absolute;
   top: 0;
   transition: border-color 0.2s;
-  left: -44px;
-  border-bottom: 23px solid #000;
-  border-right: 23px solid #000;
-  border-top: 23px solid transparent;
-  border-left: 23px solid transparent;
+  left: -53px;
+  border-bottom: 27px solid #000;
+  border-right: 27px solid #000;
+  border-top: 27px solid transparent;
+  border-left: 27px solid transparent;
 }
 .recent__product__btn::after {
   content: "";
   position: absolute;
   top: 0;
   transition: border-color 0.2s;
-  right: -44px;
-  border-bottom: 23px solid #000;
-  border-right: 23px solid transparent;
-  border-top: 23px solid transparent;
-  border-left: 23px solid #000;
+  right: -53px;
+  border-bottom: 27px solid #000;
+  border-right: 27px solid transparent;
+  border-top: 27px solid transparent;
+  border-left: 27px solid #000;
 }
 @media screen and (max-width: 740px) {
   .recent__products {
