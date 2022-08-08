@@ -6,7 +6,7 @@
   color: #fff;
   display: flex;
   justify-content: space-between;
-  margin: 66px 0 92px;
+  padding: 66px 0 92px;
   overflow: hidden;
 }
 .support__inner > div {
