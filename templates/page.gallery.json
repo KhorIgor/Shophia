@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-gallery",
+      "type": "gallery",
       "settings": {
         "title": "Gallery"
       }
