@@ -30,10 +30,11 @@
           <div class="header__bottom__inner">
             <nav class="header__nav">
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Page</a></li>
+                {% for link in linklists.main-menu.links %}
+                  <li>
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                  </li>
+                {% endfor %}
               </ul>
             </nav>
             <div class="header__logo">
