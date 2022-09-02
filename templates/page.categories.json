@@ -3,9 +3,10 @@
     "main": {
       "type": "main-categories",
       "settings": {
-        "title": "Gallery"
       }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }
