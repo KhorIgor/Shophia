@@ -25,6 +25,9 @@
         {% comment %} <img class="banner__img" src="img/main_bg-1.jpg" alt="" /> {% endcomment %}
    </div>
 </div>
+
+{{ 'main_banner.js' | asset_url | script_tag }}
+
 {% schema %}
 {
     "name": "main_banner",
