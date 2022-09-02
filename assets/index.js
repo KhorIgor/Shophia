@@ -10,5 +10,5 @@ $(".banner__slider").slick({
 
 document.querySelector(".header__barsbox").addEventListener("click", (e) => {
   document.querySelector("aside.aside").classList.toggle("active");
-  document.body.classList.toggle("overflow-hidden-mobile");
+  // document.body.classList.toggle("overflow-hidden-mobile");
 });
