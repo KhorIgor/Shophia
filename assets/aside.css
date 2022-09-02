@@ -1,9 +1,9 @@
 .aside {
-  position: absolute;
+  position: fixed;
   left: -1000px;
   background-color: #fff;
   height: 100%;
-  top: 60px;
+  top: 0;
   padding: 30px 120px 30px 30px;
   display: none;
   border-right: 2px solid #000;
